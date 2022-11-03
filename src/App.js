@@ -11,6 +11,8 @@ import LandingPage from './components/LandingPage/LandingPage';
 import Footer from './components/Footer/Footer';
 import ForgotPassword from './components/Authentication/ForgotPassword';
 import Awareness from './components/GeneralAwareness/awareness';
+import ProductLanding from './components/ProductAwareness/productLanding';
+import Doctors from './components/DoctorConsultancy/doctors';
 
 function App() {
 
@@ -46,10 +48,26 @@ function App() {
             }
           />
 
+          <Route exact
+            path='/doctors'
+            element={
+              <ProtectedRoute>
+                <Doctors />
+              </ProtectedRoute>
+            }
+          />
+
           <Route
             path='/awareness'
             element={
               <Awareness />
+            }
+          />
+
+          <Route
+            path='/productLanding'
+            element={
+              <ProductLanding />
             }
           />
 
