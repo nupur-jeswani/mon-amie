@@ -13,6 +13,9 @@ import ForgotPassword from './components/Authentication/ForgotPassword';
 import Awareness from './components/GeneralAwareness/awareness';
 import ProductLanding from './components/ProductAwareness/productLanding';
 import Doctors from './components/DoctorConsultancy/doctors';
+import AwkwardVisits from './components/GeneralAwareness/AwkwardVisits/awkwardVisits';
+import TechDifficulties from './components/GeneralAwareness/TechnicalDifficulties/techDifficulties';
+import VillageExperiences from './components/GeneralAwareness/VillageExperiences/villageExperiences';
 
 function App() {
 
@@ -82,6 +85,27 @@ function App() {
             path="/"
             element={
               <LandingPage />
+            }
+          />
+
+          <Route
+            path="/awkwardVisits"
+            element={
+              <AwkwardVisits />
+            }
+          />
+
+          <Route
+            path="/techDifficulties"
+            element={
+              <TechDifficulties />
+            }
+          />
+
+          <Route
+            path="/villageExperiences"
+            element={
+              <VillageExperiences />
             }
           />
 

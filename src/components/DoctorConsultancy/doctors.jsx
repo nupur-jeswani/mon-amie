@@ -1,57 +1,75 @@
 import React, { useEffect } from 'react';
 import { db } from '../../firebase';
 import { useState } from 'react';
-import { collection, getDocs, query } from "firebase/firestore";
+import { collection, doc, getDocs, query } from "firebase/firestore";
+import "./doctors.css";
 
 export default function Doctors() {
 
-    // States for doctors field
-    // const [medicalRegistrationVerified, setMedicalRegistrationVerified] = useState("")
-    // const [address, setAddress] = useState([])
-    // const [city, setCity] = useState("")
-    // const [country, setCountry] = useState("")
-    // const [domain, setDomain] = useState([])
-    // const [education, setEducation] = useState([])
-    // const [experience, setExperience] = useState("")
-    // const [fees, setFees] = useState("")
-    // const [name, setName] = useState("")
-    // const [offline, setOffline] = useState("")
-    // const [Online, setOnline] = useState("")
-    // const [rating, setRating] = useState("")
-    // const [state, setState] = useState("")
 
     const [doctorsList, setDoctorsList] = useState([])
-    const [search, setSearch] = useState("");
+    // const [search, setSearch] = useState("");
     const [currentDoctor, setCurrentDoctor] = useState({});
+    const [docDocument, setDocDocument] = useState({})
 
-    const handleFilter = (e) => {
-		setSearch(e.target.value);
-	}
+    // const handleFilter = (e) => {
+    // 	setSearch(e.target.value);
+    // }
 
-    const handleUniversity = (doctor) => {
-		setCurrentDoctor(doctor);
-	}
+    const handleDoctor = (doctor) => {
+    	setCurrentDoctor(doctor);
+    }
 
     useEffect(() => {
-		const getDetails = async () => {
-			const q = collection(db, "Doctors");
-			const docSnap = await getDocs(q);
+        const getDetails = async () => {
+            const q = query(collection(db, "Doctors"));
+            const docSnap = await getDocs(q);
 
-			let doctors = [];
+            let doctors = [];
 
-			docSnap.forEach((doc) => {
-				doctors.push(doc.data());
-			});
+            docSnap.forEach((doc) => {
+                doctors.push(doc.data());
+            });
 
-			setDoctorsList(doctors);
-		}
+            setDoctorsList(doctors);
+        }
 
-		getDetails();
-	}, []);
+        getDetails();
+    }, []);
+
 
     return (
         <div>
-            hi doctors
+            {
+                doctorsList.map(doc => {
+                    return (
+                        <>
+                            <div className="container" key={doc.id}>
+                                <h5>{doc["name"]}</h5>
+                                <p>Medical Registration Verification : {doc["MedicalRegistrationVerified"]}</p>
+                                <p>Domain of work : {doc["domain1"]}, {doc["domain2"]}
+                                </p>
+                                {/* <p>Education Detail (s) :
+                                   
+                                </p> */}
+                                <p>Rating given to the doctor by people : {doc["rating"]}</p>
+                                <p>Experience (in years) : {doc["experience"]}</p>
+                                <p>Fees : {doc["fees"]}</p>
+                                <p>Country : {doc["country"]}</p>
+                                <p>State : {doc["state"]}</p>
+                                <p>City : {doc["city"]}</p>
+                                {/* <p>Address :
+                                    
+                                </p> */}
+                                <p>Offline Appointments option : {doc["offline"]}</p>
+                                <p>Online Appointments option : {doc["online"]}</p>
+                            </div>
+                            <hr />
+                            
+                        </>
+                    )
+                })
+            }
         </div>
     )
 }
