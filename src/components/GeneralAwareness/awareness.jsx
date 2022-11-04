@@ -24,7 +24,7 @@ export default function Awareness() {
 
           <div className="row rows">
             <div className="col-md-4 p-2 cols">
-              <Link to={''} className='text-decoration-none'>
+              <Link to={'/redBadgeOfCourage'} className='text-decoration-none'>
                 <Card className='ms-5' style={{ width: "50%" }}>
                   <Card.Img className='mt-2 ms-1' variant="top" src={redBadge} style={{ width: "95%" }} />
                   <Card.Body>
@@ -38,7 +38,7 @@ export default function Awareness() {
             </div>
 
             <div className="col-md-4 p-2">
-              <Link to={''} className='text-decoration-none'>
+              <Link to={'/menarcheBegins'} className='text-decoration-none'>
                 <Card className='ms-5' style={{ width: "50%" }}>
                   <Card.Img className='mt-4 ms-3 mb-3' variant="top" src={menarche} style={{ width: "85%" }} />
                   <Card.Body>
@@ -88,7 +88,7 @@ export default function Awareness() {
 
 
         <div className="col-md-4 m-2 p-2">
-          <Link to={''} className='text-decoration-none'>
+          <Link to={'/socialMedia'} className='text-decoration-none'>
             <Card className='ms-5' style={{ width: "50%" }}>
               <Card.Img className='mt-2 mb-5' variant="top" src={socialMedia} style={{ width: "100%" }} />
               <Card.Body>
@@ -120,7 +120,7 @@ export default function Awareness() {
         </div>
 
         <div className="col-md-4">
-          <Link to={''} className='text-decoration-none'>
+          <Link to={'/mythBusters'} className='text-decoration-none'>
             <Card className='ms-5' style={{ width: "50%" }}>
               <Card.Img className='mt-5 ms-1 mb-4' variant="top" src={mythFact} style={{ width: "95%" }} />
               <Card.Body>
@@ -134,7 +134,7 @@ export default function Awareness() {
         </div>
 
         <div className="col-md-4">
-          <Link to={''} className='text-decoration-none'>
+          <Link to={'/monthlyVisitor'} className='text-decoration-none'>
             <Card className='ms-5' style={{ width: "50%" }}>
               <Card.Img className='mt-2 ms-2' variant="top" src={monthlyVisitor} style={{ width: "95%" }} />
               <Card.Body>
@@ -152,7 +152,7 @@ export default function Awareness() {
       <div className="row rows">
 
         <div className="col-md-4 cols">
-          <Link to={''} className='text-decoration-none'>
+          <Link to={'/organizations'} className='text-decoration-none'>
             <Card className='ms-5' style={{ width: "50%" }}>
               <Card.Img className='mt-2 ms-4' variant="top" src={organizations} style={{ width: "75%" }} />
               <Card.Body>

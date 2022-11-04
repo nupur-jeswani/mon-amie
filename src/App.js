@@ -16,6 +16,12 @@ import Doctors from './components/DoctorConsultancy/doctors';
 import AwkwardVisits from './components/GeneralAwareness/AwkwardVisits/awkwardVisits';
 import TechDifficulties from './components/GeneralAwareness/TechnicalDifficulties/techDifficulties';
 import VillageExperiences from './components/GeneralAwareness/VillageExperiences/villageExperiences';
+import MythBusters from './components/GeneralAwareness/MythBusters/mythBusters';
+import Organizations from './components/GeneralAwareness/Organizations/organizations';
+import SocialMedia from './components/GeneralAwareness/SocialMedia/socialMedia';
+import MonthlyVisitor from './components/GeneralAwareness/MonthlyVisitor/monthlyVisitor';
+import MenarcheBegins from './components/GeneralAwareness/MenarcheBegins/menarcheBegins';
+import RedBadge from './components/GeneralAwareness/RedBadgeOfCourage/redBadge';
 
 function App() {
 
@@ -106,6 +112,48 @@ function App() {
             path="/villageExperiences"
             element={
               <VillageExperiences />
+            }
+          />
+
+          <Route
+            path="/organizations"
+            element={
+              <Organizations />
+            }
+          />
+
+          <Route
+            path="/mythBusters"
+            element={
+              <MythBusters />
+            }
+          />
+
+          <Route
+            path='/socialMedia'
+            element={
+              <SocialMedia />
+            }
+          />
+
+          <Route
+            path='/monthlyVisitor'
+            element={
+              <MonthlyVisitor />
+            }
+          />
+
+          <Route
+            path='/menarcheBegins'
+            element={
+              <MenarcheBegins />
+            }
+          />
+
+          <Route
+            path='/redBadgeOfCourage'
+            element={
+              <RedBadge />
             }
           />
 
