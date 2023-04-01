@@ -17,7 +17,7 @@
 .headingTag {
     background-color: #f0e8e6;
     color: black;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -26,4 +26,8 @@
     align-items: center;
     text-align: center;
     
+}
+
+.awarenessBody {
+    background-color: #f0e8e6;
 }

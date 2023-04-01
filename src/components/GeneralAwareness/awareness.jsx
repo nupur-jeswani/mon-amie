@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "./Images/image4.png"
+import image from "./Images/awarenessTrial.png"
 import { Parallax } from 'react-parallax';
 import './awareness.css'
 import Card from 'react-bootstrap/Card';
@@ -17,64 +17,82 @@ import { Link } from 'react-router-dom';
 
 export default function Awareness() {
   return (
-    <div>
+    <div className='awarenessBody'>
 
       <Parallax className="image" bgImage={image} bgImageAlt="awareness backdrop" strength={800}>
         <div className="content">
-
-          <div className="row rows">
-            <div className="col-md-4 p-2 cols">
-              <Link to={'/redBadgeOfCourage'} className='text-decoration-none'>
-                <Card className='ms-5' style={{ width: "50%" }}>
-                  <Card.Img className='mt-2 ms-1' variant="top" src={redBadge} style={{ width: "95%" }} />
-                  <Card.Body>
-                    <Card.Text>
-                      <hr />
-                      How to obtain the red badge of courage?
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </div>
-
-            <div className="col-md-4 p-2">
-              <Link to={'/menarcheBegins'} className='text-decoration-none'>
-                <Card className='ms-5' style={{ width: "50%" }}>
-                  <Card.Img className='mt-4 ms-3 mb-3' variant="top" src={menarche} style={{ width: "85%" }} />
-                  <Card.Body>
-                    <Card.Text>
-                      <hr />
-                      Menarche Begins
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </div>
-
-            <div className="col-md-4 cols">
-              <Link to={'/villageExperiences'} className='text-decoration-none'>
-                <Card className='ms-5' style={{ width: "50%" }}>
-                  <Card.Img className='mt-2 ms-3' variant="top" src={ruralIcon} style={{ width: "85%" }} />
-                  <Card.Body>
-                    <Card.Text>
-                      <hr />
-                      Village Experiences of Bloody Buddy
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </div>
-
-          </div>
+          <h1 className="headingTag"> Mon-Amie's Awareness Chapters </h1>
         </div>
-
       </Parallax>
 
-      <div className="row rows">
+      <hr className='mt-5'/>
+      <div className='p-5'>
+        <h3 className='headingTag'>Explore these different chapters offered by Mon-Amie</h3>
+      </div>
+
+      <div className="row rows p-5">
+        <div className="col-md-3 cols">
+          <Link to={'/redBadgeOfCourage'} className='text-decoration-none'>
+            <Card className='ms-5' style={{ width: "70%" }}>
+              <Card.Img className='mt-2 ms-1' variant="top" src={redBadge} style={{ width: "95%" }} />
+              <Card.Body>
+                <Card.Text>
+                  <hr />
+                  How to obtain the red badge of courage?
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
+        </div>
+
+        <div className="col-md-3 cols">
+          <Link to={'/menarcheBegins'} className='text-decoration-none'>
+            <Card className='ms-5' style={{ width: "70%" }}>
+              <Card.Img className='mt-4 ms-3 mb-3' variant="top" src={menarche} style={{ width: "85%" }} />
+              <Card.Body>
+                <Card.Text>
+                  <hr />
+                  Menarche Begins
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
+        </div>
+
+        <div className="col-md-3 cols">
+          <Link to={'/villageExperiences'} className='text-decoration-none'>
+            <Card className='ms-5' style={{ width: "70%" }}>
+              <Card.Img className='mt-2 ms-3' variant="top" src={ruralIcon} style={{ width: "85%" }} />
+              <Card.Body>
+                <Card.Text>
+                  <hr />
+                  Village Experiences of Bloody Buddy
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
+        </div>
+
+        <div className="col-md-3">
+          <Link to={'/mythBusters'} className='text-decoration-none'>
+            <Card className='ms-5' style={{ width: "70%" }}>
+              <Card.Img className='mt-5 ms-1 mb-4' variant="top" src={mythFact} style={{ width: "95%" }} />
+              <Card.Body>
+                <Card.Text>
+                  <hr />
+                  Myth Busters
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
+        </div>
+
+      </div>
+      <div className="row rows p-5">
 
         <div className="col-md-4">
           <Link to={'/awkwardVisits'} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
+            <Card className='ms-5' style={{ width: "70%" }}>
               <Card.Img className='mt-2 ms-1' variant="top" src={awkwardVisits} style={{ width: "95%" }} />
               <Card.Body>
                 <Card.Text>
@@ -89,7 +107,7 @@ export default function Awareness() {
 
         <div className="col-md-4 m-2 p-2">
           <Link to={'/socialMedia'} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
+            <Card className='ms-5' style={{ width: "70%" }}>
               <Card.Img className='mt-2 mb-5' variant="top" src={socialMedia} style={{ width: "100%" }} />
               <Card.Body>
                 <Card.Text>
@@ -103,11 +121,11 @@ export default function Awareness() {
 
       </div>
 
-      <div className="row rows">
+      <div className="row rows p-5">
 
-        <div className="col-md-4 cols">
+        <div className="col-md-3 cols">
           <Link to={''} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
+            <Card className='ms-5' style={{ width: "70%" }}>
               <Card.Img className='mt-4 ms-1 mb-4' variant="top" src={bloodyMary} style={{ width: "95%" }} />
               <Card.Body>
                 <Card.Text>
@@ -119,23 +137,9 @@ export default function Awareness() {
           </Link>
         </div>
 
-        <div className="col-md-4">
-          <Link to={'/mythBusters'} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
-              <Card.Img className='mt-5 ms-1 mb-4' variant="top" src={mythFact} style={{ width: "95%" }} />
-              <Card.Body>
-                <Card.Text>
-                  <hr />
-                  Myth Busters
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-
-        <div className="col-md-4">
+        <div className="col-md-3">
           <Link to={'/monthlyVisitor'} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
+            <Card className='ms-5' style={{ width: "70%" }}>
               <Card.Img className='mt-2 ms-2' variant="top" src={monthlyVisitor} style={{ width: "95%" }} />
               <Card.Body>
                 <Card.Text>
@@ -147,14 +151,11 @@ export default function Awareness() {
           </Link>
         </div>
 
-      </div>
 
-      <div className="row rows">
-
-        <div className="col-md-4 cols">
+        <div className="col-md-3 cols">
           <Link to={'/organizations'} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
-              <Card.Img className='mt-2 ms-4' variant="top" src={organizations} style={{ width: "75%" }} />
+            <Card className='ms-5' style={{ width: "70%" }}>
+              <Card.Img className='mt-2 ms-2 mb-4' variant="top" src={organizations} style={{ width: "95%" }} />
               <Card.Body>
                 <Card.Text>
                   <hr />
@@ -166,9 +167,9 @@ export default function Awareness() {
         </div>
 
 
-        <div className="col-md-4 m-2 p-2">
+        <div className="col-md-3 cols">
           <Link to={'/techDifficulties'} className='text-decoration-none'>
-            <Card className='ms-5' style={{ width: "50%" }}>
+            <Card className='ms-5' style={{ width: "70%" }}>
               <Card.Img className='mt-4 ms-1 mb-4' variant="top" src={techDifficulties} style={{ width: "95%" }} />
               <Card.Body>
                 <Card.Text>
@@ -181,6 +182,7 @@ export default function Awareness() {
         </div>
 
       </div>
+      <hr />
 
     </div>
   )

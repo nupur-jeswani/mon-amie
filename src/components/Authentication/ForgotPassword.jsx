@@ -29,7 +29,7 @@ export default function ForgotPassword() {
     }
 
     return (
-        <div className="m-4">
+        <div className="m-4" style={{backgroundColor:"#fafafa"}}>
             <div className="row m-4">
                 <div className="col-sm-12 col-md-6 ps-3">
                     <img src={resetimg} alt="signup illustration" className="rounded" height="500px" />

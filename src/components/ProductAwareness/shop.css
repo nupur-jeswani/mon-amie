@@ -1,0 +1,33 @@
+.itemContainer{
+    margin: 3% 5% 3% 5%;
+    height: 500px;
+    background-color: #0e0f0f;
+    border-radius: 10px;
+}
+
+.Carousel-Banner{
+
+    width: 80%;
+    margin: auto;
+    height:50vh;
+}
+
+@media (max-width: 1060px) {
+    .Carousel-Banner{
+
+        width: 100%;
+        margin: auto;
+        height: 40vh;
+    }
+    
+  }
+
+
+@media (max-width: 650px) {
+    .Carousel-Banner{
+
+  
+        height: 40vw;
+    }
+    
+  }

@@ -22,6 +22,11 @@ import SocialMedia from './components/GeneralAwareness/SocialMedia/socialMedia';
 import MonthlyVisitor from './components/GeneralAwareness/MonthlyVisitor/monthlyVisitor';
 import MenarcheBegins from './components/GeneralAwareness/MenarcheBegins/menarcheBegins';
 import RedBadge from './components/GeneralAwareness/RedBadgeOfCourage/redBadge';
+import NapkinsProducts from './components/ProductAwareness/napkinsProducts';
+import TamponsProducts from './components/ProductAwareness/tamponsProducts';
+import CupsProducts from './components/ProductAwareness/cupsProducts';
+import DiscsProducts from './components/ProductAwareness/discsProducts';
+import PeriodPantiesProducts from './components/ProductAwareness/periodPantiesProducts';
 
 function App() {
 
@@ -77,6 +82,41 @@ function App() {
             path='/productLanding'
             element={
               <ProductLanding />
+            }
+          />
+
+          <Route
+            path='/sanitarynapkins'
+            element={
+              <NapkinsProducts />
+            }
+          />
+
+          <Route
+            path='/tampons'
+            element={
+              <TamponsProducts />
+            }
+          />
+
+          <Route
+            path='/cups'
+            element={
+              <CupsProducts />
+            }
+          />
+
+          <Route
+            path='/discs'
+            element={
+              <DiscsProducts />
+            }
+          />
+
+          <Route
+            path='/periodPanties'
+            element={
+              <PeriodPantiesProducts />
             }
           />
 

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 import { Alert } from 'react-bootstrap';
-import signupimg from "./Images/signup.jpg"
+import signupimg from "./Images/signup.jpg";
+
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -29,7 +30,7 @@ const Signup = () => {
   };
 
   return (
-    <div className=''>
+    <div style={{backgroundColor : "#f7f2ef"}}>
       <div className="row m-4">
         <div className="col-sm-12 col-md-6 p-5">
           <img src={signupimg} alt="signup illustration" className="rounded" />

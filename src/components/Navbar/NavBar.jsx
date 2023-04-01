@@ -39,8 +39,8 @@ export default function NavBar() {
                             <>
                                 {/* <NavbarBrand className="ms-auto ms-3" href="/home"><img classname="navlogo" src={logo} alt="monamie logo" width="10%"/></NavbarBrand> */}
                                 <NavLink href="/home">Home</NavLink>
-                                <NavLink href="/pcos">PCOS Prediction</NavLink>
-                                <NavLink href="/home">Cycle Tracker</NavLink>
+                                {/* <NavLink href="/pcos">PCOS Prediction</NavLink> */}
+                                {/* <NavLink href="/home">Cycle Tracker</NavLink> */}
                                 <NavLink href="/awareness">Periods Awareness</NavLink>
                                 <NavLink href="/productLanding">Periods Products</NavLink>
                                 <NavLink href="/doctors">Doctor Consultancy</NavLink>
