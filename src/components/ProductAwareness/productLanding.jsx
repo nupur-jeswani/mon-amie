@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
 import './productLanding.css';
-import image from "./Images/backdrop1.jpg";
+import image from "./Images/backdrop3.jpg";
 import pads from "./Images/pads.jpg";
 import tampons from "./Images/tamponIcon.jpg";
 import cups from "./Images/cups2.jpg";
@@ -11,64 +11,6 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 export default function ProductLanding() {
-
-	// const [napkinsProduct, setnapkinsProducts] = useState([]);
-	// const [tamponProduct, settamponProducts] = useState([]);
-	// const [cupsProduct, setcupsProducts] = useState([]);
-	// const [discsProduct, setdiscsProducts] = useState([]);
-	// const [pantiesProduct, setpantiesProducts] = useState([]);
-
-	// useEffect(() => {
-	// 	const getDetails = async () => {
-	// 		const productsRef = collection(db, "Products");
-
-	// 		const sanitaryNapkins = query(productsRef, where("productType", "==", "Sanitary pads"))
-	// 		const sanitaryNapkinsSnapshort = await getDocs(sanitaryNapkins);
-	// 		// const docSnap = await getDocs(q);
-	// 		let napkinsproducts = [];
-	// 		sanitaryNapkinsSnapshort.forEach((doc) => {
-	// 			napkinsproducts.push(doc.data());
-	// 		});
-	// 		setnapkinsProducts(napkinsproducts);
-
-	// 		const tampons = query(productsRef, where("productType", "==", "Tampon"))
-	// 		const tamponsSnapshort = await getDocs(tampons);
-	// 		let tamponsproducts = [];
-	// 		tamponsSnapshort.forEach((doc) => {
-	// 			tamponsproducts.push(doc.data());
-	// 		});
-	// 		settamponProducts(tamponsproducts);
-
-	// 		const cups = query(productsRef, where("productType", "==", "menstrual cup"))
-	// 		const cupsSnapshort = await getDocs(cups);
-	// 		let cupsproducts = [];
-	// 		cupsSnapshort.forEach((doc) => {
-	// 			cupsproducts.push(doc.data());
-	// 		});
-	// 		setcupsProducts(cupsproducts);
-
-	// 		const discs = query(productsRef, where("productType", "==", "Menstrual Disc"))
-	// 		const discsSnapshort = await getDocs(discs);
-	// 		let discsproducts = [];
-	// 		discsSnapshort.forEach((doc) => {
-	// 			discsproducts.push(doc.data());
-	// 		});
-	// 		setdiscsProducts(discsproducts);
-
-	// 		const panties = query(productsRef, where("productType", "==", "Panties"))
-	// 		const pantiesSnapshort = await getDocs(panties);
-	// 		let pantiesproducts = [];
-	// 		pantiesSnapshort.forEach((doc) => {
-	// 			pantiesproducts.push(doc.data());
-	// 		});
-	// 		setpantiesProducts(pantiesproducts);
-	// 	}
-
-	// 	getDetails();
-	// }, []);
-
-	// productproducts.filter(filteredProducts => (filteredProducts["productType"].toLowerCase().includes(search.toLowerCase())))
-
 	return (
 		<div>
 			<Parallax className="image" bgImage={image} bgImageAlt="awareness backdrop" strength={800}>
@@ -77,11 +19,11 @@ export default function ProductLanding() {
 				</div>
 			</Parallax>
 			<hr />
-			<div className="row p-5 m-5">
+			<div className="row p-5">
 				<div className="col-md-4">
-					<Card style={{ width: '18rem' }}>
+					<Card style={{ width: '18rem', borderWidth: 0 }}>
 						<Link to={"/sanitarynapkins"} className="text-decoration-none">
-							<Card.Img className='' variant="top" src={pads} style={{ width: "100%" }} />
+							<Card.Img src={pads} style={{ width: "100%" }}/>
 							<Card.Body>
 								<Card.Text>
 									Sanitary napkins
@@ -94,7 +36,7 @@ export default function ProductLanding() {
 
 				<div className="col-md-4">
 					<div className="col-md-4">
-						<Card style={{ width: '18rem' }}>
+						<Card style={{ width: '18rem', borderWidth: 0 }}>
 							<Link to={"/tampons"} className="text-decoration-none">
 								<Card.Img className='' variant="top" src={tampons} style={{ width: "100%" }} />
 								<Card.Body>
@@ -110,7 +52,7 @@ export default function ProductLanding() {
 				<div className="col-md-4">
 					<div className="col-md-4">
 
-						<Card style={{ width: '18rem' }}>
+						<Card style={{ width: '18rem', borderWidth: 0 }}>
 							<Link to={"/cups"} className="text-decoration-none">
 								<Card.Img className='' variant="top" src={cups} style={{ width: "100%" }} />
 								<Card.Body>
@@ -131,7 +73,7 @@ export default function ProductLanding() {
 				<div className="col-md-4">
 					<div className="col-md-6 justify-content-center">
 
-						<Card style={{ width: '18rem' }}>
+						<Card style={{ width: '18rem', borderWidth: 0 }}>
 							<Link to={"/periodPanties"} className="text-decoration-none">
 								<Card.Img className='' variant="top" src={periodPants} style={{ width: "100%" }} />
 								<Card.Body>
@@ -146,7 +88,7 @@ export default function ProductLanding() {
 
 				<div className="col-md-6">
 					<div className="col-md-6 justify-content-center">
-						<Card style={{ width: '18rem' }}>
+						<Card style={{ width: '18rem', borderWidth: 0 }}>
 							<Link to={"/discs"} className="text-decoration-none">
 								<Card.Img className='' variant="top" src={disc} style={{ width: "100%" }} />
 								<Card.Body>

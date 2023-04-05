@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import image from "./Images/sample4.png";
+import image from "./Images/sample7.jpeg";
 import ProductLanding from '../../components/ProductAwareness/productLanding';
 import Awareness from '../GeneralAwareness/awareness';
 
@@ -8,7 +8,7 @@ import Awareness from '../GeneralAwareness/awareness';
 export default function HomePage() {
   return (
     <div>
-      <Parallax className="image" bgImage={image} bgImageAlt="awareness backdrop" strength={800}>
+      <Parallax className="image" style={{"padding":"100px"}} bgImage={image} bgImageAlt="awareness backdrop" strength={800}>
         <div className="content">
           <h1 className="headingTag"> Hey, Welcome to Mon-Amie! </h1>
         </div>
