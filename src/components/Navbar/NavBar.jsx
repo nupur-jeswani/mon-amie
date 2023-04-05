@@ -56,7 +56,7 @@ export default function NavBar() {
                 <NavLink href="/awareness">Periods Awareness</NavLink>
                 <NavLink href="/productLanding">Periods Products</NavLink>
                 <NavLink href="/doctors">Doctor Consultancy</NavLink>
-                <NavLink href="/fitness">Fitness / Exercises</NavLink>
+                {/* <NavLink href="/fitness">Fitness / Exercises</NavLink> */}
                 <Button className="btn btn-dark fw-bold" onClick={handleLogOut}>
                   LOGOUT
                 </Button>

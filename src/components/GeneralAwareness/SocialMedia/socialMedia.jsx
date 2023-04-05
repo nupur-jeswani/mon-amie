@@ -13,9 +13,9 @@ export default function SocialMedia() {
         Let’s dive into some of the content creators and their contents based on
         what you like!
       </div>
-
+      <br />
       <h4>Dr. Cuterus:</h4>
-      <div>
+      <div className="text">
         Tanaya Narendra, better known as Dr Cuterus on Instagram, offers
         bite-sized information on sexual health, one post at a time. An oxford
         trained medical professional and firm believer in the importance of
@@ -28,18 +28,26 @@ export default function SocialMedia() {
         positivity, and calls out body and fat shaming instances to sensitise
         the public on their social interactions.
         <br />
-        <a href="https://www.youtube.com/watch?v=uzR70T4fnFY" target={"_blank"}>
-          Check out her Youtube channel for absolutely relatable content:{" "}
-        </a>
-        <br />
-        <a href="https://www.instagram.com/dr_cuterus/?hl=en" target={"_blank"}>
-          Check out her Instagram account for amazingly short but clear reels on
-          Women’s health
-        </a>
+        <div className="subtext">
+          <a
+            href="https://www.youtube.com/watch?v=uzR70T4fnFY"
+            target={"_blank"}
+          >
+            Check out her Youtube channel for absolutely relatable content:{" "}
+          </a>
+          <br />
+          <a
+            href="https://www.instagram.com/dr_cuterus/?hl=en"
+            target={"_blank"}
+          >
+            Check out her Instagram account for amazingly short but clear reels
+            on Women’s health
+          </a>
+        </div>
       </div>
 
       <h4>Dr. Riddhima Shetty:</h4>
-      <div>
+      <div className="text">
         Dr Riddhima Shetty is an obstetrician - gynaecologist who believes in a
         modern, judgement-free, holistic approach to women's health.
         <br />
@@ -53,17 +61,19 @@ export default function SocialMedia() {
         clinical research, teaching and also has a flair for art such as
         writing, public speaking and dance.
         <br />
-        <a
-          href="https://www.instagram.com/friendly_neighbourhood_obgyn/?hl=en"
-          target={"_blank"}
-        >
-          Check out her Instagram account for amazingly short but clear reels on
-          Women’s health
-        </a>
+        <div className="subtext">
+          <a
+            href="https://www.instagram.com/friendly_neighbourhood_obgyn/?hl=en"
+            target={"_blank"}
+          >
+            Check out her Instagram account for amazingly short but clear reels
+            on Women’s health
+          </a>
+        </div>
       </div>
 
       <h4>Dr. Aditi Tandon:</h4>
-      <div>
+      <div className="text">
         She has completed her MBBS from K. J. Somaiya Medical College, Mumbai,
         and MS ( OBSTETRICS AND GYNAECOLOGY) from Rural Medical College, Loni.
         She takes keen interest in Infertility Treatment, IVF and Gynaec
@@ -82,13 +92,15 @@ export default function SocialMedia() {
         presentation in various national and international conferences. She is a
         great asset to our team.
         <br />
-        <a
-          href="https://www.instagram.com/the_fertilitydoc/?igshid=YmMyMTA2M2Y%3D"
-          target={"_blank"}
-        >
-          Check out her Instagram account for amazingly short but clear reels on
-          Women’s health
-        </a>
+        <div className="subtext">
+          <a
+            href="https://www.instagram.com/the_fertilitydoc/?igshid=YmMyMTA2M2Y%3D"
+            target={"_blank"}
+          >
+            Check out her Instagram account for amazingly short but clear reels
+            on Women’s health
+          </a>
+        </div>
       </div>
     </div>
   );
